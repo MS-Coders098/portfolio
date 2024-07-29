@@ -122,7 +122,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Function Calling 
 navAnim()
+
 headingAnimation()
+
 heroAnimation()
+
 aboutAnimation()
+
 servicesAnimation()
