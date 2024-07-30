@@ -63,52 +63,6 @@ function headingAnimation() {
 
 }
 
-function aboutAnimation () {
-    gsap.from(".about-content img", {
-        x: "100%",
-        duration: 1.5,
-        opacity: 0,
-        ease: Cubic.easeInOut,
-        scrollTrigger : {
-            trigger: ".about-content",
-            scroller: "body",
-            start: "top 80%",
-            end: "top 20%",
-            scrub: 2,
-        }
-    })
-    gsap.from(".about-content div", {
-        x: "-100%",
-        duration: 1.5,
-        opacity: 0,
-        ease: Cubic.easeInOut,
-        scrollTrigger : {
-            trigger: ".about-content",
-            scroller: "body",
-            start: "top 80%",
-            end: "top 20%",
-            scrub: 2,
-        }
-    })
-}
-
-function servicesAnimation () {
-    service.forEach(function (elem) {
-        gsap.from(elem, {
-            opacity: 0,
-            duration: 1.5,
-            ease: Power2.easeInOut,
-            scrollTrigger : {
-                trigger: elem,
-                scroller: "body",
-                start: "top 80%",
-                end: "top bottom",
-                scrub: 2
-            }
-        })
-    })
-}
-
 // Event Listener
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -127,6 +81,3 @@ headingAnimation()
 
 heroAnimation()
 
-aboutAnimation()
-
-servicesAnimation()
